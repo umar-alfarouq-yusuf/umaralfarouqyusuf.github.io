@@ -1,0 +1,37 @@
+
+/* Shared page components */
+.page-hero { padding-block: 105px 85px; border-bottom: 1px solid var(--line); }
+.page-hero h1 { max-width: 800px; }
+.content-grid, .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding-block: 100px; }
+.prose { max-width: 540px; color: var(--muted); font-size: 1.08rem; }
+.prose p { margin-top: 0; margin-bottom: 26px; }
+.quote-box { margin-bottom: 100px; padding: 55px; border-left: 3px solid var(--cyan); background: var(--panel); }
+.quote-box p { max-width: 700px; margin: 0; color: var(--cyan); font: 500 clamp(1.6rem, 3vw, 2.5rem)/1.2 "Space Grotesk", sans-serif; }
+.cards-list, .project-list, .research-list { display: grid; gap: 16px; padding-block: 80px 110px; }
+.info-card { display: grid; grid-template-columns: 190px 1fr; gap: 35px; align-items: center; padding: 28px; border: 1px solid var(--line); background: var(--panel); }
+.info-card h2 { font-size: 2rem; margin-bottom: 8px; }
+.muted { color: var(--muted); }
+.certificate-placeholder { display: grid; min-height: 180px; place-items: center; align-content: center; border: 1px solid rgba(116,228,223,.35); color: var(--cyan); font-size: .7rem; letter-spacing: .18em; text-align: center; background: #102839; }
+.certificate-placeholder strong { display: block; margin-top: 8px; font: 600 3.4rem/1 "Space Grotesk", sans-serif; letter-spacing: -.08em; }
+.lab-grid, .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding-block: 80px 110px; }
+.lab-status { display: inline-block; margin-top: 22px; color: var(--lime); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
+.project-card { padding: 35px; border: 1px solid var(--line); background: var(--panel); }
+.project-card h2 { margin: 35px 0 14px; font-size: clamp(1.8rem, 4vw, 3rem); }
+.project-card p { max-width: 620px; color: var(--muted); }
+.tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.tag-row span { padding: 6px 10px; border: 1px solid var(--line); color: var(--cyan); font-size: .7rem; }
+.skill-grid { grid-template-columns: repeat(2, 1fr); }
+.skill-group { padding: 35px; border: 1px solid var(--line); background: var(--panel); }
+.skill-group h2 { margin-bottom: 25px; font-size: 2.2rem; }
+.skill-group ul { margin: 0; padding: 0; list-style: none; color: var(--muted); }
+.skill-group li { padding: 13px 0; border-top: 1px solid var(--line); }
+.skill-group li::before { content: "↗"; margin-right: 12px; color: var(--cyan); }
+.research-list article { padding: 35px 0; border-bottom: 1px solid var(--line); }
+.research-list h2 { max-width: 780px; margin: 22px 0 12px; font-size: clamp(1.8rem, 4vw, 3.2rem); }
+.research-list p { max-width: 600px; margin: 0; color: var(--muted); }
+.contact-details { max-width: 500px; padding-top: 12px; color: var(--muted); }
+.contact-details .muted { margin: 0 0 4px; font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; }
+.contact-link { display: inline-block; margin-bottom: 35px; color: var(--cyan); font-size: 1.15rem; }
+.contact-link:hover { color: var(--lime); }
+@media (max-width: 850px) { .content-grid, .contact-grid { gap: 35px; } .lab-grid { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .page-hero { padding-block: 75px 60px; } .content-grid, .contact-grid, .skill-grid { grid-template-columns: 1fr; gap: 40px; padding-block: 70px 80px; } .info-card { grid-template-columns: 1fr; } .certificate-placeholder { min-height: 140px; } .quote-box { margin-bottom: 70px; padding: 30px 24px; } .cards-list, .project-list, .research-list { padding-block: 60px 80px; } }
