@@ -10,6 +10,99 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-section {
+      padding-block: 80px 120px;
+    }
+    
+    .contact-intro {
+      margin-bottom: 60px;
+    }
+    
+    .contact-intro h1 {
+      margin-bottom: 20px;
+    }
+    
+    .contact-intro p {
+      max-width: 540px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+    }
+    
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 30px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-card:hover {
+      border-color: var(--cyan);
+      background: linear-gradient(135deg, rgba(116, 228, 223, 0.1), rgba(116, 228, 223, 0.05));
+      transform: translateY(-4px);
+    }
+    
+    .contact-label {
+      display: block;
+      color: var(--cyan);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    
+    .contact-link {
+      display: inline-block;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 600;
+      word-break: break-all;
+      transition: all 0.2s ease;
+    }
+    
+    .contact-card:hover .contact-link {
+      color: var(--lime);
+    }
+    
+    .contact-icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+    
+    .contact-card:hover .contact-icon {
+      opacity: 1;
+    }
+    
+    @media (max-width: 620px) {
+      .contact-links {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-card {
+        padding: 30px 20px;
+      }
+      
+      .contact-link {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -31,15 +124,34 @@
     </div>
   </header>
 
-  <main class="container" style="padding: 80px 0 120px;">
-    <p class="eyebrow">Contact</p>
-    <h1>Contact Umar Alfarouq Yusuf</h1>
-    <p class="hero-text">For academic, professional, or Digital Forensics-related communication, use the channels below.</p>
-    <ul class="hero-text" style="padding-left: 1.2rem;">
-      <li>Email: <a href="mailto:umaralfarouqyusuf001@gmail.com">umaralfarouqyusuf001@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/umaralfarouqyusuf">github.com/umaralfarouqyusuf</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/umar-alfarouq-yusuf-2980b3384?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn profile</a></li>
-    </ul>
+  <main class="container">
+    <section class="contact-section">
+      <div class="contact-intro">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Contact Umar Alfarouq Yusuf</h1>
+        <p>For academic, professional, or Digital Forensics-related communication, reach out through any of the channels below.</p>
+      </div>
+
+      <div class="contact-links">
+        <div class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-icon">✉</span>
+          <a href="mailto:umaralfarouqyusuf001@gmail.com" class="contact-link">umaralfarouqyusuf001@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-icon">⚙</span>
+          <a href="https://github.com/umaralfarouqyusuf" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/umaralfarouqyusuf</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-icon">💼</span>
+          <a href="https://www.linkedin.com/in/umar-alfarouq-yusuf-2980b3384?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
