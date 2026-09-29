@@ -3,13 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Certifications and education of Umar Alfarouq Yusuf in Digital Forensics.">
+  <meta name="description" content="Certifications and learning milestones of Umar Alfarouq Yusuf in Digital Forensics.">
   <meta name="theme-color" content="#08111f">
   <title>Certifications | Umar Alfarouq Yusuf</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .certifications-page {
+      padding: 80px 0 120px;
+    }
+
+    .cert-list {
+      display: grid;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .cert-card {
+      padding: 28px 30px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .cert-card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .cert-date {
+      color: var(--cyan);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .cert-card h3 {
+      margin-bottom: 14px;
+      font-size: clamp(1.5rem, 2vw, 2.1rem);
+      line-height: 1.2;
+    }
+
+    .cert-card p {
+      margin: 6px 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .cert-card strong {
+      color: var(--ink);
+    }
+
+    .cert-card .cert-id {
+      margin-top: 10px;
+      color: var(--lime);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 620px) {
+      .cert-card {
+        padding: 22px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -31,19 +92,67 @@
     </div>
   </header>
 
-  <main class="container" style="padding: 80px 0 120px;">
+  <main class="container certifications-page">
     <p class="eyebrow">Certifications</p>
-    <h1>Certifications & Education</h1>
-    <p class="hero-text">This section documents academic learning, training, and certifications relevant to Digital Forensics as they are earned and verified.</p>
+    <h1>Certifications & Learning</h1>
+    <p class="hero-text">This section reflects certifications, training, and learning activities relevant to Digital Forensics as they are earned and documented.</p>
 
-    <div style="margin-top: 40px;">
-      <h2>Education</h2>
-      <p class="hero-text">Digital Forensics — [Institution / Programme]</p>
-    </div>
+    <div class="cert-list">
+      <article class="cert-card">
+        <div class="cert-date">19 Sep 2026</div>
+        <h3>Null Origin CTF 2026 — Participation Certificate</h3>
+        <p><strong>Issuer:</strong> CyberHX</p>
+        <p><strong>Event:</strong> NULL ORIGIN CTF 2026 — International Capture the Flag Competition</p>
+      </article>
 
-    <div style="margin-top: 40px;">
-      <h2>Training</h2>
-      <p class="hero-text">[Course / Training] — [Institution / Provider] — [Year]</p>
+      <article class="cert-card">
+        <div class="cert-date">23 Nov 2025</div>
+        <h3>3-Day Cybersecurity & Personal Development Virtual Seminar</h3>
+        <p><strong>Issuer:</strong> ArtificialX Technology Ltd.</p>
+        <p><strong>Credential ID:</strong> CSD-2311-0188</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">11 Oct 2025</div>
+        <h3>Cybersecurity Awareness Day 2025</h3>
+        <p><strong>Issuer:</strong> Nigerian Army University Biu, Faculty of Computing, Department of Cyber Security</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">29 Sep 2025</div>
+        <h3>Introduction to Critical Infrastructure Protection</h3>
+        <p><strong>Issuer:</strong> OPSWAT Academy</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">22–26 Sep 2025</div>
+        <h3>Holmes CTF 2025</h3>
+        <p><strong>Issuer:</strong> Hack The Box (HTB)</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">11 Jul 2025</div>
+        <h3>CrowdSec Threat Intelligence</h3>
+        <p><strong>Issuer:</strong> CrowdSec Academy</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">11 Jul 2025</div>
+        <h3>Introduction to Cybersecurity</h3>
+        <p><strong>Issuer:</strong> Cisco Networking Academy</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">Aug 2024</div>
+        <h3>Introduction to Cyber Security</h3>
+        <p><strong>Issuer:</strong> Great Learning Academy</p>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-date">21 Jul 2023</div>
+        <h3>Community Driven Cybersecurity</h3>
+        <p><strong>Issuer:</strong> CrowdSec Academy</p>
+      </article>
     </div>
   </main>
 
